@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.5'
 
+gem 'pg','0.20.0'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.8'
 # Use Puma as the app server
@@ -35,7 +37,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 group :development, :test do
-  gem 'sqlite3',  '1.3.13'#←上の方に書いてある'sqlite3'を消して、ここに記述してださい
+  gem 'pg','0.20.0'
   gem 'byebug', '9.0.6', platform: :mri
  #gem 'capybara', '~> 2.13'←コメントアウトでok
  #gem 'selenium-webdriver'←コメントアウトでok
