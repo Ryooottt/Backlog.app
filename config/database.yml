@@ -9,17 +9,17 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   timeout: 5000
   encoding: unicode
-  username: Backlog.app
+  username: BacklogApp
   password:
   host: localhost
 
 development:
   <<: *default
-  database: Backlog.app_development
+  database: BacklogApp_development
 
 test:
   <<: *default
-  database: Backlog.app_test
+  database: BacklogApp_test
 
 # Herokuデプロイ時に再度見直す
 production:

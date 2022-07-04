@@ -13,3 +13,34 @@
  *= require_tree .
  *= require_self
  */
+
+ html, body,
+ul, ol,
+h1, h2, h3, h4, h5, h6, p,
+form, input, div {
+  margin: 0;
+  padding: 0;
+}
+
+ .header {
+    height: 90px;
+    background-color: black;
+    color: #fff;
+  }
+  .header-logo {
+    font-size: 36px;
+    padding: 20px 40px;
+    float: left;
+  }
+
+  .main {
+    font-family: arial;
+    font-size: 24px;
+    margin: 200px auto;
+    width: 350px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+

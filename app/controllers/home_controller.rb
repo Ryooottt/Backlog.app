@@ -4,4 +4,10 @@ class HomeController < ApplicationController
 
   def about
   end
+
+  def login_form
+  end
+
+  def login
+  end
 end
