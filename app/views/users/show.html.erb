@@ -14,8 +14,12 @@
       
         <div class="header-list">
           <ul>
-              <li>logout</li>
-              <li>HOME</li>
+              <li>
+              <%= link_to("logout", "/")%>
+              </li>
+              <li>
+              <%= link_to("HOME", "/users/index")%>
+              </li>
               <div class="input-group">
                 <input type="text" id="txt-search" class="form-control input-group-prepend" placeholder="userIDを入力"></input>
                 <span class="input-group-btn input-group-append">
